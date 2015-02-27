@@ -4,9 +4,6 @@ HomeController = AppController.extend({
   }
 });
 
-FooController = AppController.extend({
-
-});
 
 CanvasController = AppController.extend({
 
@@ -42,8 +39,13 @@ ProfileController = AppController.extend({
         AccountsEntry.signInRequired(this);
     },
     onAfterAction: function () {
-        Meta.setTitle('Profile');
+        Meta.setTitle('FOO PROFILE');
+    },
+
+    waitOn: function() {
+        return this.subscribe('profilePictures');
     }
+
 });
 
 DashboardController.events({
