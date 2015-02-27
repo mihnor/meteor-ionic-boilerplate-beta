@@ -1,0 +1,18 @@
+template(name='profile')
+    +if currentUser
+        +contentFor("headerButtonRight")
+            button.button.button-clear.pull-right.button-positive(data-ion-modal='settings')
+            +ionIcon(icon='ios-gear-outline')
+        +contentFor("headerTitle")
+            h1.title Profile
+    +ionView
+        +ionContent
+            .container
+                #champion-messages.row
+                    +autoForm(id="updateProfile" collection=Users doc=currentUser type="update")
+                        .col #{alert}
+                        .col
+                            +afQuickField(name="profile.picture")
+                        .col
+                            +afQuickField(name='profile' omitFields="profile.picture")
+                            button.btn.btn-primary(type='submit') Update

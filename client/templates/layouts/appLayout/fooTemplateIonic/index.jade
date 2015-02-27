@@ -1,0 +1,12 @@
+template(name="foo")
+    +contentFor("headerButtonLeft")
+        button(class="button button-clear pull-left button-positive" data-ion-modal="search")
+            +ionIcon(icon='ios-search')
+    +contentFor("headerButtonRight")
+        button(class="button button-clear pull-right button-positive" data-ion-modal="newProduct")
+            +ionIcon(icon='ios-plus-empty')
+    +contentFor("headerTitle")
+        h1(class="title") Canvas
+    +ionView
+        +ionContent
+            h1 TE AMO MORENA!

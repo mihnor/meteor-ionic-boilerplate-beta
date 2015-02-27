@@ -6,7 +6,7 @@ DashboardController = AppController.extend({
     items: Items.find({})
   },
   onBeforeAction: function (pause) {
-    AccountsTemplates.ensureSignedIn.call(this, pause);
+      AccountsEntry.signInRequired(this);
   },
   onAfterAction: function () {
     Meta.setTitle('Dashboard');
@@ -17,4 +17,5 @@ DashboardController.events({
   'click [data-action=doSomething]': function (event, template) {
     event.preventDefault();
   }
+
 });

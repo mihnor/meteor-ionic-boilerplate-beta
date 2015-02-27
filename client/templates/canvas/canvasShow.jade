@@ -1,0 +1,23 @@
+template(name="canvasShow")
+    +contentFor("headerButtonLeft")
+        button(class="button button-clear pull-left button-positive" data-ion-modal="search")
+            +ionIcon(icon='ios-search')
+    +contentFor("headerButtonRight")
+        button(class="button button-clear pull-right button-positive" data-ion-modal="newProduct")
+            +ionIcon(icon='ios-plus-empty')
+    +contentFor("headerTitle")
+        h1(class="title") CANVAS SHOW
+    +ionView
+        +ionContent
+            .canvas-detail
+                with canvas
+                    +ionItem(iconLeft=true iconRight=true class="item-text-wrap")
+                        h2.product-title
+                            a(href="#{url}" target="_blank" class="positive") #{title}
+                        p #{tagline}
+                    +with author
+                        p
+                        small via
+                            a(href="#{pathFor 'users.show'}" class="dark") #{profile.name}
+                    span.date-posted
+                        #{datePosted}

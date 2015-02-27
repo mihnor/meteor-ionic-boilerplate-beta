@@ -1,0 +1,34 @@
+<template name="profileHMTL ">
+    {{#if currentUser}}
+        {{#contentFor "headerButtonRight"}}
+            <button class="button button-clear pull-right button-positive" data-ion-modal="settings">
+                {{> ionIcon icon='ios-gear-outline'}}
+            </button>
+        {{/contentFor}}
+    {{/if}}
+
+    {{#contentFor "headerTitle"}}
+        <h1 class="title">Profile</h1>
+    {{/contentFor}}
+
+    {{#ionView}}
+        {{#ionContent}}
+	<div class="container">
+		<div class="row" id="champion-messages">
+			{{#autoForm id="updateProfile" collection=Users doc=currentUser type="update"}}
+			<div class="col-md-12">{{> alert}}</div>
+			<div>
+					{{> afQuickField name="profile.picture"}}
+			</div>
+			<div class="col-100">
+				{{> afQuickField name='profile' omitFields="profile.picture"}}
+				<button type="submit" class="btn btn-primary">Update</button>
+			</div>
+			{{/autoForm}}
+		</div>
+	</div>
+
+
+                {{/ionContent}}
+                {{/ionView}}
+</template>

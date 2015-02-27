@@ -1,0 +1,16 @@
+template(name="canvas")
+    +contentFor("headerButtonLeft")
+        button(class="button button-clear pull-left button-positive" data-ion-modal="search")
+            +ionIcon(icon='ios-search')
+    +contentFor("headerButtonRight")
+        button(class="button button-clear pull-right button-positive" data-ion-modal="newProduct")
+            +ionIcon(icon='ios-plus-empty')
+    +contentFor("headerTitle")
+        h1(class="title") Canvas
+    +ionView
+        +ionContent
+            +ionList
+                each canvas
+                    div(class="list card")
+                        div(class="item item-text-wrap")
+                            +_canvasItem(canvas=this path="canvas.show")
