@@ -46,3 +46,5 @@ yogiben:admin
 yogiben:autoform-map
 cfs:standard-packages
 cfs:gridfs
+raix:handlebar-helpers
+accounts-ui

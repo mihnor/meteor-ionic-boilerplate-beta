@@ -18,6 +18,11 @@ Router.route('/canvas/:_id', {
 
 Router.route('/profile');
 
+Router.route('/sign-inn', {
+    template: 'myEntrySignIn',
+    name: 'signIn'
+});
+
 Router.waitOn = function() {
 
     this.subscribe('user');

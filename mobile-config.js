@@ -1,8 +1,8 @@
 App.info({
-  name: 'MeteorHunt',
-  description: 'Submit and vote on products made with Meteor',
-  author: 'Nick Wientge',
-  website: 'http://exygen.io',
+  name: 'Meteor Boilerplate + Ionic',
+  description: 'AccountsEntry + Mailgun + Social Connections',
+  author: 'Clelio de Paula',
+  website: 'http://cleliodpaula.com',
   version: '0.0.1'
 });
 
@@ -19,16 +19,16 @@ App.icons({
 });
 
 App.launchScreens({
-  'iphone': 'resources/splash/iphone.png',
-  'iphone_2x': 'resources/splash/iphone_2x.png',
-  'iphone5': 'resources/splash/iphone5.png',
-  'iphone6': 'resources/splash/iphone6.png',
-  'iphone6p_portrait': 'resources/splash/iphone6p_portrait.png',
-  'iphone6p_landscape': 'resources/splash/iphone6p_landscape.png',
-  'ipad_portrait': 'resources/splash/ipad_portrait.png',
-  'ipad_portrait_2x': 'resources/splash/ipad_portrait_2x.png',
-  'ipad_landscape': 'resources/splash/ipad_landscape.png',
-  'ipad_landscape_2x': 'resources/splash/ipad_landscape_2x.png',
+  'iphone': 'resources/splash/Default.png',
+  'iphone_2x': 'resources/splash/Default@2x.png',
+  'iphone5': 'resources/splash/Default-568h@2x.png',
+  'iphone6': 'resources/splash/iPhone6-portrait@2x.png',
+  'iphone6p_portrait': 'resources/splash/iPhone6-Plus-portrait@3x.png',
+  'iphone6p_landscape': 'resources/splash/iPhone6-Plus-landscapet@3x.png',
+  'ipad_portrait': 'resources/splash/Default~ipad.png',
+  'ipad_portrait_2x': 'resources/splash/Default~ipad@2x.png',
+  'ipad_landscape': 'resources/splash/Default~ipad~landscape.png',
+  'ipad_landscape_2x': 'resources/splash/Default~ipad~landscape@2x.png',
   'android_ldpi_portrait': 'resources/splash/android_ldpi_portrait.png',
   'android_ldpi_landscape': 'resources/splash/android_ldpi_landscape.png',
   'android_mdpi_portrait': 'resources/splash/android_mdpi_portrait.png',
