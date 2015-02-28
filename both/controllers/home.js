@@ -1,10 +1,3 @@
-HomeController = AppController.extend({
-  data: {
-
-  }
-});
-
-
 CanvasController = AppController.extend({
 
     waitOn: function() {
@@ -26,12 +19,6 @@ CanvasShowController = AppController.extend({
 
 });
 
-MyEntrySignInController = AppController.extend({
-
-    data: {
-
-    }
-});
 
 ProfileController = AppController.extend({
 

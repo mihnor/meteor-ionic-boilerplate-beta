@@ -1,24 +1,28 @@
 Accounts.config({
-    sendVerificationEmail: false
+    sendVerificationEmail: true
 });
 
 if (Meteor.isClient) {
     Meteor.startup(function() {
         if (Config.username) {
             AccountsEntry.config({
-                profileRoute: 'profile'
+                profileRoute: 'canvas'
             });
             return {
                 homeRoute: '/',
-                dashboardRoute: '/dashboard',
+                dashboardRoute: '/canvas',
                 signInTemplate: 'myEntrySignIn',
+                signUpTemplate: 'myEntrySignUp',
+                forgotPasswordTemplate: 'myForgotPassword',
                 passwordSignupFields: 'USERNAME_AND_EMAIL'
             };
         } else {
             return AccountsEntry.config({
                 homeRoute: '/',
-                dashboardRoute: '/dashboard',
+                dashboardRoute: '/canvas',
                 signInTemplate: 'myEntrySignIn',
+                signUpTemplate: 'myEntrySignUp',
+                forgotPasswordTemplate: 'myForgotPassword',
                 passwordSignupFields: 'EMAIL_ONLY'
             });
         }

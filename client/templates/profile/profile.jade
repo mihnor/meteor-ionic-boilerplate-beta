@@ -7,8 +7,8 @@ template(name='profile')
             h1.title Profile
     +ionView
         +ionContent
-            h1 PROFILE
             .container
+                h1 PROFILE
                 #champion-messages.row
                     +autoForm(id="updateProfile" collection=Users doc=currentUser type="update")
                         .col #{alert}

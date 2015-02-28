@@ -29,7 +29,6 @@ fourseven:scss
 meteoric:ionic
 meteoric:ionicons-sass
 meteoric:ionic-sass
-joshowens:accounts-entry
 coffeescript
 yogiben:alerts
 cfs:graphicsmagick
@@ -48,3 +47,4 @@ cfs:standard-packages
 cfs:gridfs
 raix:handlebar-helpers
 accounts-ui
+cleliodpaula:accounts-entry-ionic
